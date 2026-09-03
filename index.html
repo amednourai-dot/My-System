@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محول الأنظمة العددية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><main class="app">
+    <header>
+        <h1>محول الأنظمة العددية</h1>
+        <p>تحويل سريع بين الأنظمة العددية</p>
+    </header>
+
+    <section class="converter">
+        <input
+            type="text"
+            id="numberInput"
+            placeholder="أدخل الرقم"
+            autocomplete="off"
+        >
+
+        <div class="systems">
+            <button class="system active" data-base="2">ثنائي</button>
+            <button class="system" data-base="8">ثماني</button>
+            <button class="system" data-base="10">عشري</button>
+            <button class="system" data-base="16">سداسي عشري</button>
+        </div>
+
+        <button id="convertBtn">تحويل</button>
+
+        <div id="error"></div>
+
+        <div class="results">
+            <div class="result">
+                <span>الثنائي</span>
+                <strong id="binary">—</strong>
+            </div>
+
+            <div class="result">
+                <span>العشري</span>
+                <strong id="decimal">—</strong>
+            </div>
+
+            <div class="result">
+                <span>الثماني</span>
+                <strong id="octal">—</strong>
+            </div>
+
+            <div class="result">
+                <span>السداسي عشري</span>
+                <strong id="hexadecimal">—</strong>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="copyBtn">نسخ النتيجة</button>
+            <button id="clearBtn">مسح</button>
+        </div>
+    </section>
+
+    <footer>
+        <span>Binary System</span>
+    </footer>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
